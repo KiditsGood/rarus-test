@@ -10,10 +10,12 @@ function navScrollHandler(){
 function catalogHandler(){
     $('.burger').click(() => {
         $('.catalog').addClass('open')
+        $('body').addClass('hidden')
     })
 
     $('.catalog__close').click(() => {
         $('.catalog').removeClass('open')
+        $('body').removeClass('hidden')
     })
 }
 
